@@ -1,0 +1,44 @@
+# Root-level Git ignore for movie-price-app
+
+# --- Global ignores ---
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# --- Node / React frontend ---
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.parcel-cache/
+
+# --- .NET backend ---
+backend/bin/
+backend/obj/
+backend/*.user
+backend/*.suo
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Environment and settings ---
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.json
+**/appsettings.*.json.user
+**/secrets.json
+.env
+.env.*
+
+# --- OS files ---
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# --- Backup and temporary files ---
+*.swp
+*~
